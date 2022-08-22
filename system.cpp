@@ -91,6 +91,10 @@ struct hospital_system
         while (true)
         {
             int choice {menu()};
+            if(choice==1)
+                add_patient();
+            else if (choice ==2 )
+                print_patients();
             
         }
         
@@ -133,7 +137,17 @@ struct hospital_system
 
     }
 
+    void print_patients(){
+
+        cout<<"***********************************************"<<endl;
+        for(int i=0;i<MAX_SPEC;i++)
+            queues[i].print();
+
+    }
+
     
+
+
 };
 
 
