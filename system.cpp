@@ -86,6 +86,33 @@ struct hospital_system
         for(int i=0;i<MAX_SPEC;i++)
             queues[i]=hospital_queue(i);
     }
+    
+    void run(){
+        while (true)
+        {
+            int choice {menu()};
+            
+        }
+        
+        
+    }
+    int menu(){
+        int choice {0};
+        while(choice==0){
+
+            cout<<"1) Add a new Patient"<<endl;
+            cout<<"2) Get the next patient"<<endl;
+            cout<<"3) Print All patients"<<endl;
+            cout<<"4) Exit"<<endl;
+            cin>>choice;
+
+            if(!(choice>=1 && choice<=4)){
+                cout<<"Invalid Choice, Try Again"<<endl;
+                cin>>choice;
+            }
+        }
+        return choice;
+    }
 };
 
 
