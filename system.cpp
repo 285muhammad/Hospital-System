@@ -94,7 +94,11 @@ struct hospital_system
             if(choice==1)
                 add_patient();
             else if (choice ==2 )
+                get_next_patient();
+            else if (choice ==3 )
                 print_patients();
+            else 
+                break;
             
         }
         
@@ -137,6 +141,13 @@ struct hospital_system
 
     }
 
+    void get_next_patient(){
+        int spec;
+        cout<<"Enter the number of specalizaion"<<endl;
+        cin>>spec;
+        queues[spec].remove_front();
+    }
+
     void print_patients(){
 
         cout<<"***********************************************"<<endl;
@@ -146,12 +157,12 @@ struct hospital_system
     }
 
     
-
-
 };
 
 
 
 int main(){
+    // hospital_queue queue()=hospital_queue();
+    // hospital_queue.
     return 0;
 }
