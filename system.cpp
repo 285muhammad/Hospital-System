@@ -111,8 +111,29 @@ struct hospital_system
                 cin>>choice;
             }
         }
+
         return choice;
     }
+
+    void add_patient(){
+
+        string name;
+        bool statu;
+        int spec;
+
+        cout<<"Enter your information Specaliazaion , name , status"<<endl;
+        cin>>spec>>name>>statu;
+
+        if(statu)
+            queues[spec].add_front(name,statu);
+        else 
+            queues[spec].add_end(name,statu);
+        
+
+
+    }
+
+    
 };
 
 
