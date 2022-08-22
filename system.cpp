@@ -22,15 +22,15 @@ struct hospital_queue
         spec=_spec;
     }
 
-    // void add_end(string name, bool statu){
-    //     if(len==MAX_QUEUE){
-    //         cout<<"There is no places Sorry"<<endl;
-    //         return;
-    //     }
-    //     name[len]=name;
-    //     status[len]=statu;
-    //     len++;
-    // }
+    void add_end(string name, bool statu){
+        if(len==MAX_QUEUE){
+            cout<<"There is no places Sorry"<<endl;
+            return;
+        }
+        names[len]=name;
+        status[len]=statu;
+        len++;
+    }
 
     void add_front(string name,bool statu){
         if(len==MAX_QUEUE){
