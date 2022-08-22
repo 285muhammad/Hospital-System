@@ -162,7 +162,9 @@ struct hospital_system
 
 
 int main(){
-    // hospital_queue queue()=hospital_queue();
-    // hospital_queue.
+
+    hospital_system hospital = hospital_system();
+    hospital.run();
+    
     return 0;
 }
